@@ -3,9 +3,9 @@ function sumAsync(num1, num2, callback){
     callback(result);
 }
 
-sumAsync(2, 3, x);
+sumAsync(2, 3, printAddedNumbers);
 
-function x(result) {
+function printAddedNumbers(result) {
     setTimeout(() => {
         console.log(result);
     },4000)
